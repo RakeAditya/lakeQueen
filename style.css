@@ -1,0 +1,329 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.box {
+	border: 1px solid red;
+}
+/* variables */
+:root {
+	--text-blue: #0a5d99;
+}
+/* styleing navbar */
+#mobile-menu {
+	display: none;
+	background-color: #333;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 60%;
+	transform: translateX(100%);
+	transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu.active {
+	transform: translateX(0);
+}
+
+/* image slider */
+.list img {
+	width: 100vw;
+	max-width: 100vw;
+	height: 100%;
+	object-fit: cover;
+}
+.dots li.active {
+	width: 30px;
+	background-color: white;
+}
+/* feedback section */
+.spc-box {
+	border: 0.7rem solid white;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 25%;
+	left: 18%;
+	z-index: 10;
+	box-shadow: 0 0 10px black;
+}
+.spc-box img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+/* absolute image styling */
+@media screen and (min-width: 1300px) {
+	.spc-box {
+		left: 22%;
+	}
+}
+@media screen and (min-width: 1700px) {
+	.spc-box {
+		left: 25%;
+	}
+}
+
+/* second carousal */
+/* Event section */
+.normal-div {
+	display: block;
+}
+.morzilla-div {
+	display: none;
+}
+
+@-moz-document url-prefix() {
+	.normal-div {
+		display: none;
+	}
+	.morzilla-div {
+		display: block;
+	}
+}
+/* slder swection */
+
+.carousel {
+	/* border: 1px solid red; */
+	height: 500px;
+	perspective: 220px;
+}
+.carousel .carousel-item {
+	/* border: 2px solid rgba(0, 0, 0, 0.8); */
+	width: 500px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	background: #fff;
+	padding: 30px;
+	height: auto;
+	text-align: center;
+	border-radius: 15px;
+}
+.testi {
+	margin: 5rem 0;
+}
+.testi img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	object-fit: cover;
+	opacity: 1;
+	transition: 0.4s ease-in;
+	z-index: 10;
+}
+.testi img:hover {
+	opacity: 0.4;
+	z-index: -1;
+}
+.testi p {
+	position: relative;
+	z-index: 1;
+	color: #262626;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+/* service section  */
+section {
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+section .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+section .column {
+	width: 100%;
+	padding: 0 1em 1em 1em;
+	text-align: center;
+}
+section .card {
+	width: 100%;
+	height: 100%;
+	padding: 2em 1.5em;
+	background: linear-gradient(#ffffff 50%, var(--text-blue) 50%);
+	background-size: 100% 200%;
+	background-position: 0 2.5%;
+	border-radius: 5px;
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+	transition: 0.5s;
+}
+section h3 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #1f194c;
+	margin: 1em 0;
+}
+section p {
+	color: #575a7b;
+	font-size: 15px;
+	line-height: 1.6;
+	letter-spacing: 0.03em;
+}
+.icon-wrapper {
+	background-color: var(--text-blue);
+	position: relative;
+	margin: auto;
+	font-size: 30px;
+	height: 2.5em;
+	width: 2.5em;
+	color: #ffffff;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	transition: 0.5s;
+}
+section .card:hover {
+	background-position: 0 100%;
+}
+section .card:hover .icon-wrapper {
+	background-color: #ffffff;
+	color: var(--text-blue);
+}
+section .card:hover h3 {
+	color: #ffffff;
+}
+section .card:hover p {
+	color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+	section {
+		padding: 0 2em;
+	}
+	section .column {
+		flex: 0 50%;
+		max-width: 50%;
+	}
+}
+@media screen and (min-width: 992px) {
+	section {
+		padding: 1em 3em;
+	}
+	section .column {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+	}
+}
+/* event section  */
+.swiper-slide {
+	border: 1rem solid rgba(0, 0, 0, 0.12);
+	/* border-radius: 20px; */
+	outline: none;
+	margin: 5px 10px;
+	height: 350px;
+	min-width: 300px;
+	width: 400px;
+	max-width: 400px;
+	position: relative;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+}
+
+/* footer style */
+.footer {
+	width: 100%;
+	background: #10182f;
+	border-radius: 6px;
+}
+.footer .footer-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 5em;
+	padding: 60px;
+}
+.footer-row .footer-col h4 {
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+.footer-col .links {
+	margin-top: 20px;
+}
+.footer-col .links li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+.footer-col .links li a {
+	text-decoration: none;
+	color: #bfbfbf;
+}
+.footer-col .links li a:hover {
+	color: #fff;
+}
+.footer-col p {
+	margin: 20px 0;
+	color: #bfbfbf;
+	max-width: 300px;
+}
+.footer-col form {
+	display: flex;
+	gap: 5px;
+}
+.footer-col input {
+	height: 40px;
+	border-radius: 6px;
+	background: none;
+	width: 100%;
+	outline: none;
+	border: 1px solid #7489c6;
+	caret-color: #fff;
+	color: #fff;
+	padding-left: 10px;
+}
+.footer-col input::placeholder {
+	color: #ccc;
+}
+.footer-col form button {
+	background: #fff;
+	outline: none;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: 0.2s ease;
+}
+.footer-col form button:hover {
+	background: #cecccc;
+}
+.footer-col .icons {
+	display: flex;
+	margin-top: 30px;
+	gap: 30px;
+	cursor: pointer;
+}
+.footer-col .icons i {
+	color: #afb6c7;
+}
+.footer-col .icons i:hover {
+	color: #fff;
+}
+@media (max-width: 768px) {
+	.footer {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		transform: none;
+		width: 100%;
+		border-radius: 0;
+	}
+	.footer .footer-row {
+		padding: 20px;
+		gap: 1rem;
+	}
+	.footer-col form {
+		display: block;
+	}
+	.footer-col form :where(input, button) {
+		width: 100%;
+	}
+	.footer-col form button {
+		margin: 10px 0 0 0;
+	}
+}
