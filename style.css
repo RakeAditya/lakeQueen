@@ -10,23 +10,9 @@
 :root {
 	--text-blue: #0a5d99;
 }
-/* styleing navbar */
-#mobile-menu {
-	display: none;
-	background-color: #333;
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 60%;
-	transform: translateX(100%);
-	transition: transform 0.3s ease-in-out;
+#menu-toggle:checked + #menu {
+	display: block;
 }
-
-#mobile-menu.active {
-	transform: translateX(0);
-}
-
 /* image slider */
 .list img {
 	width: 100vw;
@@ -86,12 +72,10 @@
 /* slder swection */
 
 .carousel {
-	/* border: 1px solid red; */
 	height: 500px;
 	perspective: 220px;
 }
 .carousel .carousel-item {
-	/* border: 2px solid rgba(0, 0, 0, 0.8); */
 	width: 500px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 	background: #fff;
@@ -131,7 +115,6 @@
 section {
 	width: 100%;
 	display: grid;
-	place-items: center;
 }
 section .row {
 	display: flex;
@@ -213,7 +196,6 @@ section .card:hover p {
 /* event section  */
 .swiper-slide {
 	border: 1rem solid rgba(0, 0, 0, 0.12);
-	/* border-radius: 20px; */
 	outline: none;
 	margin: 5px 10px;
 	height: 350px;
@@ -234,8 +216,7 @@ section .card:hover p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 5em;
-	padding: 60px;
+	gap: 8em;
 }
 .footer-row .footer-col h4 {
 	color: #fff;
