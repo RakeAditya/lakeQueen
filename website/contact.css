@@ -1,5 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--text-blue: rgb(10, 93, 153);
+}
 #menu-toggle:checked + #menu {
 	display: block;
+}
+body {
+	background-color: white;
 }
 .box {
 	border: 1px solid red;
@@ -17,11 +28,11 @@
 	width: 30px;
 	background-color: white;
 }
+/* footer */
 .footer {
 	width: 100%;
-	background: #10182f;
+	background: rgb(10, 93, 153);
 	border-radius: 6px;
-	padding-bottom: 1rem;
 }
 .footer .footer-row {
 	display: flex;

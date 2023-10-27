@@ -4,6 +4,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+:root {
+	--text-blue: rgb(10, 93, 153);
+}
 .addBorder:hover {
 	border: 1px solid orange;
 }
@@ -679,9 +682,8 @@
 /* footer */
 .footer {
 	width: 100%;
-	background: #10182f;
+	background: rgb(10, 93, 153);
 	border-radius: 6px;
-	padding-bottom: 1rem;
 }
 .footer .footer-row {
 	display: flex;
