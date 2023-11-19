@@ -9,9 +9,7 @@ body {
 .box {
 	border: 1px solid red;
 }
-.addBorder:hover {
-	border: 1px solid orange;
-}
+
 /* variables */
 :root {
 	--text-blue: rgb(10, 93, 153);
@@ -22,13 +20,37 @@ body {
 #menu-toggle:checked + #menu {
 	display: block;
 }
+/* navbar  */
+.mainmenu:hover .submenu {
+	display: block;
+	position: absolute;
+	width: 300px;
+	left: 0;
+	top: 100%;
+	margin-top: 5px;
+	margin-left: -8px;
+	transition: 0.3s ease-in-out;
+}
+.mainmenu:hover .submenu ul {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	transition: 0.3s ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+	.mainmenu:hover .submenu {
+		margin-top: 0;
+		left: -70%;
+	}
+}
 /* image slider */
 .list img {
 	width: 100vw;
-	max-width: 100vw;
 	height: 100%;
+	min-width: 300px;
 	object-fit: cover;
-	/* background-position: 50% 50%; */
 }
 .dots li.active {
 	width: 30px;
@@ -136,6 +158,12 @@ body {
 	font-weight: 500;
 	letter-spacing: 1px;
 	text-align: center;
+}
+@media screen and (max-width: 700px) {
+	.carousel .carousel-item {
+		height: 200px;
+		width: 300px !important;
+	}
 }
 /* service section  */
 section {
@@ -311,7 +339,7 @@ section .card:hover p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 8em;
+	gap: 8rem;
 }
 .footer-row .footer-col h4 {
 	color: #fff;

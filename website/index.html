@@ -22,17 +22,10 @@
 	</head>
 
 	<body>
-		<div class="w-full lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-4 py-2 fixed z-[100]">
+		<div class="w-full lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-4 py-2 fixed top-0 z-[100]">
 			<div class="flex-1 flex justify-between items-center">
 				<a href="/" class="flex text-lg font-semibold">
-					<img
-						src="https://dev.rz-codes.com/static/logo-275e932fd817cc84d99d91f7519a9a22.svg"
-						width="50"
-						height="50"
-						class="p-2"
-						alt="Rz Codes Logo"
-					/>
-					<div class="mt-3 text-2xl tracking-wide text-red-600">Lake Queen</div>
+					<img src="/assets/mainlogo.png" width="175" height="140" alt="Lake queen" />
 				</a>
 			</div>
 			<label for="menu-toggle" class="cursor-pointer lg:hidden block">
@@ -72,7 +65,7 @@
 						<li class="py-2 lg:py-0 lg:px-2">
 							<a
 								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
-								href="#"
+								href="/gallary.html"
 							>
 								Gallery</a
 							>
@@ -87,6 +80,27 @@
 							>
 						</li>
 
+						<li class="py-2 lg:py-0 lg:px-2 relative mainmenu">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
+								href="#"
+							>
+								Safety
+							</a>
+							<div class="hidden submenu text-black bg-white">
+								<ul class="m-2">
+									<li class="px-5 py-4">
+										<a href="/" class="text-black hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]">
+											Evacuation Procedure</a
+										>
+									</li>
+									<li class="px-5 pb-2">
+										<a href="/" class="text-black hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]">Life Jacket</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
 						<li class="py-2 lg:py-0 lg:px-2">
 							<a
 								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all active:text-red-500"
@@ -96,9 +110,9 @@
 							>
 						</li>
 
-						<li class="py-2 lg:py-0 lg:px-2">
+						<li class="py-2 lg:py-0">
 							<button
-								class="px-5 py-2 rounded-xl bg-orange-400 text-white text-xl font-semibold hover:bg-white hover:text-orange-500 border-0 addBorder hover:border-orange-400 duration-500"
+								class="px-5 py-2 rounded-xl bg-orange-400 text-white text-xl font-semibold border border-solid hover:bg-white hover:text-orange-500 hover:border-orange-400 duration-500"
 							>
 								Book Now
 							</button>
@@ -108,7 +122,7 @@
 			</div>
 		</div>
 		<!-- banner section -->
-		<div class="slider w-full max-w-[100vw] h-[700px] m-auto min-w-[300px] relative overflow-hidden">
+		<div class="slider w-full max-w-[100vw] min-h-[250px] h-[50vw] m-auto min-w-[300px] relative overflow-hidden mt-[80px]">
 			<div class="list absolute top-0 left-0 h-[100%] w-max flex duration-1000">
 				<div class="item">
 					<img src="assets/img3.jpg" alt="" />
@@ -138,13 +152,13 @@
 			<!-- dots -->
 		</div>
 		<!-- popup -->
-		<div class="w-full h-[150px] relative min-w-[300px]">
+		<div class="w-full h-[150px] relative min-w-[300px] md:mt-0">
 			<div
-				class="h-[200px] w-[min(100%,1200px)] min-w-[250px] mx-auto absolute inset-0 top-[-6rem] flex justify-evenly items-center flex-col md:flex-row bg-[var(--text-blue)]"
+				class="h-full w-full md:h-[200px] md:w-[min(80%,1200px)] min-w-[250px] mx-auto md:absolute md:inset-0 md:top-[-6rem] flex justify-evenly items-center flex-col md:flex-row bg-[var(--text-blue)] px-5"
 			>
-				<h1 class="text-2xl text-center sm:text-4xl font-semibold tracking-wider text-white">Start your Lake Queen journey now</h1>
+				<h1 class="md:w-[80%] text-xl md:text-4xl text-center font-semibold tracking-wider text-white">Start your Lake Queen journey now</h1>
 				<button
-					class="border-2 border-solid border-white bg-orange-400 hover:bg-white hover:text-orange-500 text-white text-lg sm:text-xl font-semibold px-6 sm:px-8 py-3 sm:py-5 rounded-[10px] shadow-lg duration-500"
+					class="border-2 border-solid border-white bg-orange-400 hover:bg-white hover:text-orange-500 text-white text-lg font-semibold px-4 sm:px-6 py-3 sm:py-5 rounded-[10px] shadow-lg duration-500"
 				>
 					Book Now
 				</button>
@@ -161,7 +175,7 @@
 			</div>
 			<!-- image Gallary section -->
 			<div class="carousel">
-				<a class="carousel-item" href="#">
+				<a class="carousel-item" id="new-card" href="#">
 					<div class="testi" id="caro-card">
 						<img src="assets/ig1.jpg" />
 						<div class="overlay">
@@ -177,7 +191,7 @@
 					</div>
 				</a>
 
-				<a class="carousel-item" href="#">
+				<a class="carousel-item" id="new-card" href="#">
 					<div class="testi" id="caro-card">
 						<img src="assets/ig1.jpg" />
 						<div class="overlay">
@@ -193,7 +207,7 @@
 					</div>
 				</a>
 
-				<a class="carousel-item" href="#">
+				<a class="carousel-item" id="new-card" href="#">
 					<div class="testi" id="caro-card">
 						<img src="assets/ig1.jpg" />
 						<div class="overlay">
@@ -209,7 +223,7 @@
 					</div>
 				</a>
 
-				<a class="carousel-item" href="#">
+				<a class="carousel-item" id="new-card" href="#">
 					<div class="testi" id="caro-card">
 						<img src="assets/ig1.jpg" />
 						<div class="overlay">
@@ -225,7 +239,7 @@
 					</div>
 				</a>
 
-				<a class="carousel-item" href="#">
+				<a class="carousel-item" id="new-card" href="#">
 					<div class="testi" id="caro-card">
 						<img src="assets/ig1.jpg" />
 						<div class="overlay">
@@ -565,7 +579,7 @@
 		<section class="footer min-w-[300px] relative box border-[rgb(10,93,153)]">
 			<div class="bg-black h-full w-full absolute top-0 left-0 rounded-[6px] opacity-[0.25] z-[1]"></div>
 			<div class="footer-row sm:px-[10%] py-[60px] relative z-[10]">
-				<div class="footer-col">
+				<div class="footer-col mr-[1rem]">
 					<h4>Contact Us</h4>
 					<ul class="links">
 						<li><a href="#">Email Id: abc@gmail.com</a></li>
@@ -593,7 +607,6 @@
 						<i class="fa-brands fa-facebook-f"></i>
 						<i class="fa-brands fa-twitter"></i>
 						<i class="fa-brands fa-linkedin"></i>
-						<i class="fa-brands fa-github"></i>
 					</div>
 				</div>
 			</div>
@@ -610,18 +623,19 @@
 	<!-- First carousal script -->
 	<script>
 		// slider functions
+		let autoPlay = setInterval(() => {
+			next.click();
+		}, 5000);
 
 		let list = document.querySelector('.slider .list');
-		let items = document.querySelectorAll(' .slider .list .item');
+		let items = document.querySelectorAll('.slider .list .item');
 		let dots = document.querySelectorAll('.slider .dots li');
 		let prev = document.getElementById('prev');
 		let next = document.getElementById('next');
 
 		let active = 0;
 		let itemLength = items.length - 1;
-		let autoPlay = setInterval(() => {
-			next.click();
-		}, 5000);
+
 		next.onclick = function () {
 			if (active + 1 > itemLength) {
 				active = 0;
@@ -634,14 +648,12 @@
 		function reloadSlider() {
 			let checkLeft = items[active].offsetLeft;
 			list.style.left = -checkLeft + 'px';
-			// adding the active class
-
-			// removing the slide interval then adding gain
-			clearInterval(autoPlay);
-			let autoPlay = setInterval(() => {
+			if (autoPlay) clearInterval(autoPlay);
+			autoPlay = setInterval(() => {
 				next.click();
 			}, 5000);
 		}
+
 		prev.onclick = function () {
 			if (active - 1 < 0) {
 				active = itemLength;
@@ -650,6 +662,7 @@
 			}
 			reloadSlider();
 		};
+
 		// auto play
 	</script>
 
@@ -657,13 +670,25 @@
 	<script>
 		$(document).ready(function () {
 			$('.carousel').carousel({
-				padding: 200,
+				padding: 100,
 			});
-			autoplay();
-			function autoplay() {
-				$('.carousel').carousel('next');
-				setTimeout(autoplay, 10000);
-			}
+		});
+		let caroInterval = setInterval(() => {
+			$('.carousel').carousel('next');
+		}, 6000);
+
+		const newCard = document.querySelectorAll('#new-card');
+		newCard.forEach((ele) => {
+			ele.addEventListener('mouseenter', () => {
+				// console.log('Hello');
+				clearInterval(caroInterval);
+			});
+			ele.addEventListener('mouseleave', () => {
+				// console.log('Bye');
+				caroInterval = setInterval(() => {
+					$('.carousel').carousel('next');
+				}, 6000);
+			});
 		});
 	</script>
 
@@ -678,11 +703,6 @@
 			slidesPerView: 3,
 			loop: true,
 		});
-	</script>
-	<script>
-		var abc = document.getElementById('caro-card');
-		abc.addEventListener('mouseenter', console.log('hello'));
-		abc.addEventListener('mouseleave', console.log('bye'));
 	</script>
 	<!-- event swiper -->
 	<script>
