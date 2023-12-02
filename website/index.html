@@ -22,6 +22,7 @@
 	</head>
 
 	<body>
+		<!-- yaha waha div change  -->
 		<div class="w-full lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-4 py-2 fixed top-0 z-[100]">
 			<div class="flex-1 flex justify-between items-center">
 				<a href="/" class="flex text-lg font-semibold">
@@ -46,12 +47,36 @@
 								Home</a
 							>
 						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2 relative mainmenu">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
+								href="#"
+							>
+								About
+								<span class="text-2xl -ml-1">
+									<ion-icon name="chevron-down-outline" class="h-[15px]"></ion-icon>
+								</span>
+							</a>
+
+							<div class="hidden submenu text-black bg-white">
+								<ul class="m-2">
+									<li class="px-5 py-4">
+										<a href="/" class="text-black hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]"> About Us</a>
+									</li>
+									<li class="px-5 pb-2">
+										<a href="/" class="text-black hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]">Availability</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
 						<li class="py-2 lg:py-0 lg:px-2">
 							<a
 								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
-								href="about.html"
+								href="#"
 							>
-								About</a
+								Inquiry</a
 							>
 						</li>
 						<li class="py-2 lg:py-0 lg:px-2">
@@ -86,6 +111,10 @@
 								href="#"
 							>
 								Safety
+
+								<span class="text-2xl -ml-1">
+									<ion-icon name="chevron-down-outline" class="h-[15px]"></ion-icon>
+								</span>
 							</a>
 							<div class="hidden submenu text-black bg-white">
 								<ul class="m-2">
@@ -110,17 +139,38 @@
 							>
 						</li>
 
-						<li class="py-2 lg:py-0">
-							<button
-								class="px-5 py-2 rounded-xl bg-orange-400 text-white text-xl font-semibold border border-solid hover:bg-white hover:text-orange-500 hover:border-orange-400 duration-500"
-							>
-								Book Now
-							</button>
+						<li class="py-2 lg:py-0 lg:px-2 relative topbox z-1">
+							<ion-icon
+								name="person-circle-outline"
+								class="text-xl lg:text-4xl pt-2 font-semibold leading-[1.5] transition-all text-[var(--text-blue)] duration-500"
+							></ion-icon>
+							<div class="text-black popbox">
+								<ul class="m-2 flex flex-col items-start">
+									<li class="px-5 py-4">
+										<a
+											href="/"
+											class="text-white text-xl text-start lg:text-2xl font-semibold leading-[1.5] hover:pb-1 hover:border-b-4 hover:border-white transition duration-500"
+										>
+											Login</a
+										>
+									</li>
+									<li class="px-5 pb-2">
+										<a
+											href="/"
+											class="text-white text-xl text-start lg:text-2xl font-semibold leading-[1.5] hover:pb-1 hover:border-b-4 hover:border-white transition duration-500"
+										>
+											Search PNR
+										</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
+
+		<!-- upper div change -->
 		<!-- banner section -->
 		<div class="slider w-full max-w-[100vw] min-h-[250px] h-[50vw] m-auto min-w-[300px] relative overflow-hidden mt-[80px]">
 			<div class="list absolute top-0 left-0 h-[100%] w-max flex duration-1000">
