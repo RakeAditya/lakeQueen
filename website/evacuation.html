@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<!-- material css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+		<!-- service section imports -->
+		<!-- Font Awesome CDN-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+		<!-- second slider css -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+		<!-- footer -->
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<link rel="stylesheet" type="text/css" href="/evacuation.css" />
+		<title>Evacuation Procedure</title>
+	</head>
+	<body>
+		<div class="w-full lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-4 py-2 fixed top-0 z-[100]">
+			<div class="flex-1 flex justify-between items-center">
+				<a href="/" class="flex text-lg font-semibold">
+					<img src="/assets/mainlogo.png" width="175" height="140" alt="Lake queen" />
+				</a>
+			</div>
+			<label for="menu-toggle" class="cursor-pointer lg:hidden block">
+				<svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<title>menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</label>
+			<input class="hidden" type="checkbox" id="menu-toggle" />
+			<div class="hidden duration-500 transition-all lg:flex lg:items-center lg:w-auto w-full" id="menu">
+				<div class="bg-transparent border-0 outline-none flex items-center justify-center duration-500 transition-all">
+					<ul class="text-center flex flex-col lg:flex-row items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:pt-0">
+						<li class="py-2 lg:py-0 lg:pr-5">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
+								href="index.html"
+							>
+								Home</a
+							>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2 relative mainmenu">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
+								href="#"
+							>
+								About
+								<span class="text-2xl -ml-1">
+									<ion-icon name="chevron-down-outline" class="h-[15px]"></ion-icon>
+								</span>
+							</a>
+
+							<div class="hidden submenu text-black bg-white">
+								<ul class="m-2">
+									<li class="px-5 py-4">
+										<a href="/" class="text-black hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]"> About Us</a>
+									</li>
+									<li class="px-5 pb-2">
+										<a href="/" class="text-black hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]">Availability</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
+								href="#"
+							>
+								Inquiry</a
+							>
+						</li>
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
+								href="#"
+							>
+								Event</a
+							>
+						</li>
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
+								href="/gallary.html"
+							>
+								Gallery</a
+							>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
+								href="#"
+							>
+								Feedback</a
+							>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2 relative mainmenu">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all"
+								href="#"
+							>
+								Safety
+
+								<span class="text-2xl -ml-1">
+									<ion-icon name="chevron-down-outline" class="h-[15px]"></ion-icon>
+								</span>
+							</a>
+							<div class="hidden submenu text-black bg-white">
+								<ul class="m-2">
+									<li class="px-5 py-4">
+										<a href="/" class="text-black hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]">
+											Evacuation Procedure</a
+										>
+									</li>
+									<li class="px-5 pb-2">
+										<a href="/" class="text-black hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]">Life Jacket</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-black font-semibold hover:pb-1 hover:border-b-4 hover:border-orange-400 leading-[1.5] transition-all active:text-red-500"
+								href="contact.html"
+							>
+								Contact</a
+							>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2 relative topbox z-1">
+							<ion-icon
+								name="person-circle-outline"
+								class="text-xl lg:text-4xl pt-2 font-semibold leading-[1.5] transition-all text-[var(--text-blue)] duration-500"
+							></ion-icon>
+							<div class="text-black popbox">
+								<ul class="m-2 flex flex-col items-start">
+									<li class="px-5 py-4">
+										<a
+											href="/"
+											class="text-white text-xl text-start lg:text-2xl font-semibold leading-[1.5] hover:pb-1 hover:border-b-4 hover:border-white transition duration-500"
+										>
+											Login</a
+										>
+									</li>
+									<li class="px-5 pb-2">
+										<a
+											href="/"
+											class="text-white text-xl text-start lg:text-2xl font-semibold leading-[1.5] hover:pb-1 hover:border-b-4 hover:border-white transition duration-500"
+										>
+											Search PNR
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="min-h-screen lg:px-[10%] mt-[10rem]">
+			<h1 class="text-5xl text-black leading-12 capitalize font-semibold my-4 text-center">Evacuation Procedure</h1>
+			<div class="w-full flex flex-col lg:flex-row">
+				<!-- 1st column -->
+				<div class="flex-1 px-6 lg:px-0">
+					<!-- 1st box -->
+					<div class="my-5">
+						<h1 class="inline-block py-3 px-5 pr-6 mb-2 mx-2 rounded-full bg-sky-400 font-semibold text-xl text-white">1</h1>
+						<h2 class="ml-5 text-2xl text-gray-500 font-bold font-poppins my-3 tracking-wide">General Emergency Signal</h2>
+						<p class="ml-5 text-xl tracking-wide text-gray-400 lg:w-[80%] leading-8">7 or more short blasts followed by one long blast</p>
+					</div>
+					<!-- 2nd box -->
+					<div class="my-10">
+						<h1 class="inline-block py-3 px-5 mb-2 mx-2 rounded-full bg-sky-400 font-semibold text-xl text-white">2</h1>
+						<h2 class="ml-5 text-2xl text-gray-500 font-bold font-poppins my-3 tracking-wide">
+							Action by Passengers on Hearing General Emergency Signal
+						</h2>
+						<p class="ml-5 text-xl tracking-wide text-gray-400 lg:w-[80%] leading-8">
+							When the 'General Emergency Signal' is heard, passengers should keep calm and remain seated and further wait for other arrangements/
+							instructions announced by the crew. The capacity of each life raft is 50 Passengers
+						</p>
+					</div>
+				</div>
+				<!-- 2nd column -->
+				<div class="flex-[2] flex items-start justify-center">
+					<img src="/assets/ship_img1.jpg" alt="boat ki photo" width="min(100%,500px)" class="object-cover my-5" />
+				</div>
+				<!-- 3rd column -->
+				<div class="flex-1 px-6 lg:px-0">
+					<div class="my-5">
+						<h1 class="inline-block py-3 px-5 mb-2 mx-2 rounded-full bg-sky-400 font-semibold text-xl text-white">3</h1>
+						<h2 class="ml-5 text-2xl text-gray-500 font-bold font-poppins capitalize my-3 tracking-wide">Abondan Ship Signal</h2>
+						<p class="ml-5 text-xl tracking-wide text-gray-400 lg:w-[80%] leading-8">7 or more short blasts followed by one long blast</p>
+					</div>
+					<div class="my-10">
+						<h1 class="inline-block py-3 px-5 mb-2 mx-2 rounded-full bg-sky-400 font-semibold text-xl text-white">4</h1>
+						<h2 class="ml-5 text-2xl text-gray-500 font-bold font-poppins capitalize my-3 tracking-wide">
+							Action by Passengers on Hearing Abandon Ship Signal
+						</h2>
+						<p class="ml-5 text-xl tracking-wide text-gray-400 lg:w-[80%] leading-8">
+							When the 'General Emergency Signal' is heard, passengers should keep calm and go back to their own seats and take off their shoes. Put
+							on the life jacket kept under the seats as per 'Life Jacket donning instructions'. Do not bring any sharp objects or luggage on the life
+							raft. Do not rush onto the escape door. Follow the crew's instructions to proceed to respective life rafts
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<section class="footer min-w-[300px] relative box border-[rgb(10,93,153)]">
+			<div class="bg-black h-full w-full absolute top-0 left-0 rounded-[6px] opacity-[0.25] z-[1]"></div>
+			<div class="footer-row sm:px-[10%] py-[60px] relative z-[10]">
+				<div class="footer-col mr-[1rem]">
+					<h4>Contact Us</h4>
+					<ul class="links">
+						<li><a href="#">Email Id: abc@gmail.com</a></li>
+						<li><a href="#">Mobile No : +91 123 234 4576</a></li>
+						<li><a href="#">Address : Lorem ipsum dolor sit amet.</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Usefull Links</h4>
+					<ul class="links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Payment Method</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Newsletter</h4>
+					<p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
+					<form action="#">
+						<input type="text" placeholder="Your email" required />
+						<button type="submit">SUBSCRIBE</button>
+					</form>
+					<div class="icons">
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-linkedin"></i>
+					</div>
+				</div>
+			</div>
+			<div class="my-[1rem] sm:my-[2rem] w-[90%] mx-auto flex flex-col md:flex-row md:justify-between items-center relative z-[10]">
+				<h1 class="text-sm sm:text-lg font-semibold text-white leading-8 tracking-wide capitalize">All right reserved © Lake Queen</h1>
+				<h1 class="text-sm sm:text-xl font-semibold text-white leading-8 tracking-wide capitalize">
+					Powered by <a href="https://theinfosoftnet.com/">Infosoft Network</a>
+				</h1>
+			</div>
+		</section>
+	</body>
+</html>
