@@ -11,6 +11,18 @@
 }
 /* navbar  */
 
+.addBorder:hover {
+	border: 1px solid orange;
+}
+.list img {
+	width: 100vw;
+	height: 100%;
+	object-fit: cover;
+}
+.dots li.active {
+	width: 30px;
+	background-color: white;
+}
 .mainmenu:hover .submenu {
 	display: block;
 	position: absolute;
