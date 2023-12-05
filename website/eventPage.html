@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="/event.css" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -18,10 +19,10 @@
 		<!-- footer -->
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-		<link rel="stylesheet" type="text/css" href="/event.css" />
-		<title>Evacuation Procedure</title>
+		<title>Events</title>
 	</head>
 	<body>
+		<!-- navbar -->
 		<div class="w-full lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-4 py-2 fixed top-0 z-[100]">
 			<div class="flex-1 flex justify-between items-center">
 				<a href="/" class="flex text-lg font-semibold">
@@ -138,7 +139,7 @@
 							>
 						</li>
 
-						<li class="py-2 lg:py-0 lg:px-2 relative topbox">
+						<li class="py-2 lg:py-0 lg:px-2 relative topbox z-1">
 							<ion-icon
 								name="person-circle-outline"
 								class="text-xl lg:text-4xl pt-2 font-semibold leading-[1.5] transition-all text-[var(--text-blue)] duration-500"
@@ -155,7 +156,7 @@
 									</li>
 									<li class="px-5 pb-2">
 										<a
-											href="/"
+											href="/pnr.html"
 											class="text-white text-xl text-start lg:text-2xl font-semibold leading-[1.5] hover:pb-1 hover:border-b-4 hover:border-white transition duration-500"
 										>
 											Search PNR
@@ -202,9 +203,29 @@
 			<h1 class="text-5xl text-black font-bold leading-8 tracking-wide text-center mb-10">Events</h1>
 		</div>
 
-		<div class="min-h-screen"></div>
+		<div class="container my-12">
+			<a href="#">
+				<img src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg" alt="Herd of horses" />
+			</a>
+			<a href="#">
+				<img src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg" alt="Baby Elephant" />
+			</a>
+			<a href="#">
+				<img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg" alt="Koi Fish" />
+			</a>
+			<a href="#">
+				<img src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg" alt="Ibis Bird" />
+			</a>
+			<a href="#">
+				<img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg" alt="Lemur" />
+			</a>
+			<a href="#">
+				<img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg" alt="Berber Monkeys" />
+			</a>
+		</div>
+
 		<!-- footer -->
-		<section class="footer min-w-[300px] relative box border-[rgb(10,93,153)]">
+		<section class="footer min-w-[300px] relative border border-solid border-[rgb(10,93,153)]">
 			<div class="bg-black h-full w-full absolute top-0 left-0 rounded-[6px] opacity-[0.25] z-[1]"></div>
 			<div class="footer-row sm:px-[10%] py-[60px] relative z-[10]">
 				<div class="footer-col mr-[1rem]">
