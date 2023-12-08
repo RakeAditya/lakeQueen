@@ -23,10 +23,31 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		<div class="w-full lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-4 py-2 fixed top-0 z-[100]">
+		<div class="h-[50px] w-full bg-[var(--text-blue)] fixed top-0 z-[100] px-5 pb-1 flex items-center justify-between">
+			<div class="flex-1 justify-self-start flex items-center justify-start gap-x-4">
+				<i class="fa fa-envelope text-lg font-semibold leading-6 tracking-wide text-white" aria-hidden="true"></i>
+				<p class="text-md font-semibold leading-6 tracking-wide text-white">: cruiselakequeen@gmail.com</p>
+			</div>
+			<div class="flex-1 flex items-center justify-center gap-x-8">
+				<i
+					class="fa-brands fa-facebook-f box py-2 px-3 rounded-full border-white text-white hover:bg-white hover:text-black duration-500 cursor-pointer"
+				></i>
+				<i
+					class="fa-brands fa-twitter box py-2 px-2 rounded-full border-white text-white hover:bg-white hover:text-black duration-500 cursor-pointer"
+				></i>
+				<i
+					class="fa-brands fa-linkedin box py-2 px-2 rounded-full border-white text-white hover:bg-white hover:text-black duration-500 cursor-pointer"
+				></i>
+			</div>
+			<div class="flex-1 justify-self-end flex items-center justify-end gap-x-4">
+				<i class="fa fa-phone text-lg font-semibold leading-6 tracking-wide text-white" aria-hidden="true"></i>
+				<p class="text-md font-semibold leading-6 tracking-wide text-white">: +91 9415027200</p>
+			</div>
+		</div>
+		<div class="w-full lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-4 py-2 fixed top-12 z-[100]">
 			<div class="flex-1 flex justify-between items-center">
 				<a href="/" class="flex text-lg font-semibold">
-					<img src="/assets/mainlogo.png" width="175" height="140" alt="Lake queen" />
+					<img src="/assets/mainlogo.png" width="120" height="120" alt="Lake queen" />
 				</a>
 			</div>
 			<label for="menu-toggle" class="cursor-pointer lg:hidden block">
@@ -200,123 +221,82 @@
 			<!-- dots -->
 		</div>
 		<div class="my-[2rem]">
-			<h1 class="text-5xl text-black font-bold leading-8 tracking-wide text-center mb-10">Gallary</h1>
+			<h1 class="text-5xl text-black font-bold leading-8 tracking-wide text-center">Gallery</h1>
 		</div>
-		<div class="gallery">
-			<div class="gallery__strip__wrapper">
-				<div class="gallery__strip one">
-					<div class="photo cursor-pointer">
+		<!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+		<div class="container mx-auto px-5 py-2 lg:px-32 my-8">
+			<div class="-m-1 flex flex-wrap md:-m-2">
+				<div class="flex w-1/2 flex-wrap">
+					<div class="w-1/2 p-1 md:p-2">
 						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg" /></div>
-							<div class="photo__name">Kyoto</div>
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/bar_area.png" />
 						</a>
 					</div>
-					<div class="photo cursor-pointer">
+					<div class="w-1/2 p-1 md:p-2">
 						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-austria.jpeg" /></div>
-							<div class="photo__name">Halstatt</div>
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/bar_area_2nd.png" />
 						</a>
 					</div>
-					<div class="photo cursor-pointer">
+					<div class="w-full p-1 md:p-2">
 						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-peru.jpeg" /></div>
-							<div class="photo__name">Peru</div>
-						</a>
-					</div>
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rio.jpeg" /></div>
-							<div class="photo__name">Rio</div>
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/bar_other.png" />
 						</a>
 					</div>
 				</div>
-			</div>
-			<div class="gallery__strip__wrapper">
-				<div class="gallery__strip two">
-					<div class="photo cursor-pointer">
+				<div class="flex w-1/2 flex-wrap">
+					<div class="w-full p-1 md:p-2">
 						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-italy.jpeg" /></div>
-							<div class="photo__name">Italy</div>
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/closeup.png" />
 						</a>
 					</div>
-					<div class="photo cursor-pointer">
+					<div class="w-1/2 p-1 md:p-2">
 						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-osaka.jpeg" /></div>
-							<div class="photo__name">Osaka</div>
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/counter area.png" />
 						</a>
 					</div>
-					<div class="photo cursor-pointer">
+					<div class="w-1/2 p-1 md:p-2">
 						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali.jpeg" /></div>
-							<div class="photo__name">Bali</div>
-						</a>
-					</div>
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris2.jpg" /></div>
-							<div class="photo__name">Paris</div>
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/deluxe_room.png" />
 						</a>
 					</div>
 				</div>
-			</div>
-			<div class="gallery__strip__wrapper">
-				<div class="gallery__strip three">
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-cusco.jpeg" /></div>
-							<div class="photo__name">Cusco</div>
-						</a>
-					</div>
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rome.jpeg" /></div>
-							<div class="photo__name">Rome</div>
-						</a>
-					</div>
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris.jpeg" /></div>
-							<div class="photo__name">Paris</div>
-						</a>
-					</div>
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali2.jpeg" /></div>
-							<div class="photo__name">Bali</div>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="gallery__strip__wrapper">
-				<div class="gallery__strip four">
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-milan.jpeg" /></div>
-							<div class="photo__name">Milan</div>
-						</a>
-					</div>
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-budapest.jpg" /></div>
-							<div class="photo__name">Budapest</div>
-						</a>
-					</div>
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-vienna.jpg" /></div>
-							<div class="photo__name">Vienna</div>
-						</a>
-					</div>
-					<div class="photo cursor-pointer">
-						<a href="/subgal.html">
-							<div class="photo__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-mexico.jpg" /></div>
-							<div class="photo__name">Mexico</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
 
+				<div class="flex w-1/2 flex-wrap">
+					<div class="w-full p-1 md:p-2">
+						<a href="/subgal.html">
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/other.png" />
+						</a>
+					</div>
+					<div class="w-1/2 p-1 md:p-2">
+						<a href="/subgal.html">
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/second_floor.png" />
+						</a>
+					</div>
+					<div class="w-1/2 p-1 md:p-2">
+						<a href="/subgal.html">
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/table_area.png" />
+						</a>
+					</div>
+				</div>
+				<div class="flex w-1/2 flex-wrap">
+					<div class="w-1/2 p-1 md:p-2">
+						<a href="/subgal.html">
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/table_area1.png" />
+						</a>
+					</div>
+					<div class="w-1/2 p-1 md:p-2">
+						<a href="/subgal.html">
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/table_area2.png" />
+						</a>
+					</div>
+					<div class="w-full p-1 md:p-2">
+						<a href="/subgal.html">
+							<img alt="gallery" class="gal-box block h-full w-full rounded-lg object-cover object-center" src="/assets/other/table_area4.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- footer -->
 		<section class="footer min-w-[300px] relative border border-solid border-[rgb(10,93,153)]">
 			<div class="bg-black h-full w-full absolute top-0 left-0 rounded-[6px] opacity-[0.25] z-[1]"></div>
