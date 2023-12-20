@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<!-- material css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+		<!-- service section imports -->
+		<!-- Font Awesome CDN-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+		<!-- second slider css -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+		<!-- footer -->
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		<!-- yaha waha div change  -->
+		<div class="h-[50px] w-full bg-[var(--text-blue)] fixed top-0 z-[100] px-5 pb-1 flex items-center justify-between">
+			<div class="flex-1 sm:justify-self-start flex items-center justify-center sm:justify-start gap-x-4">
+				<i class="fa fa-envelope text-lg font-semibold leading-6 tracking-wide text-white" aria-hidden="true"></i>
+				<p class="text-md font-semibold leading-6 tracking-wide text-white">cruiselakequeen@gmail.com</p>
+			</div>
+			<div class="flex-1 flex items-center justify-center gap-x-8 hidden sm:flex">
+				<i
+					class="fa-brands fa-facebook-f box py-2 px-3 rounded-full border-white text-white hover:bg-white hover:text-black duration-500 cursor-pointer"
+				></i>
+				<i
+					class="fa-brands fa-twitter box py-2 px-2 rounded-full border-white text-white hover:bg-white hover:text-black duration-500 cursor-pointer"
+				></i>
+				<i
+					class="fa-brands fa-linkedin box py-2 px-2 rounded-full border-white text-white hover:bg-white hover:text-black duration-500 cursor-pointer"
+				></i>
+			</div>
+			<div class="flex-1 justify-self-end flex items-center justify-end gap-x-4 hidden sm:flex">
+				<i class="fa fa-phone text-lg font-semibold leading-6 tracking-wide text-white" aria-hidden="true"></i>
+				<p class="text-md font-semibold leading-6 tracking-wide text-white">: +91 9415027200</p>
+			</div>
+		</div>
+		<div class="w-full bg-white shadow-md flex flex-col justify-center flex-wrap items-center fixed top-12 z-[100]">
+			<div class="flex-1 flex justify-between items-center gap-x-4 w-full">
+				<a href="/" class="flex text-lg font-semibold">
+					<img src="/assets/logogda1.png" width="200" height="200" alt="Lake queen" />
+				</a>
+				<marquee>
+					<div class="flex items-center">
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia, blanditiis, nobis laborum et, ipsa aliquid officiis debitis
+							eveniet ratione veritatis dicta excepturi voluptatibus beatae libero recusandae alias enim atque!
+						</p>
+						<img src="/assets/Aimg4.jpg" width="100" height="100" alt="jkjl" />
+					</div>
+				</marquee>
+				<a href="/" class="flex text-lg font-semibold h-[70px]">
+					<img src="/assets/mainlogo.png" width="300" alt="Lake queen" class="h-[100%]" />
+				</a>
+				<marquee class="">
+					<div class="flex items-center">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione hic eos exercitationem, distinctio suscipit accusamus, quos quas
+							doloremque incidunt aspernatur vel explicabo laboriosam aperiam quidem sed dolor. Incidunt, dolore amet!
+						</p>
+					</div>
+				</marquee>
+				<a href="/" class="flex text-lg font-semibold">
+					<img src="/assets/Seal_of_Uttar_Pradesh.svg" width="200" height="200" alt="Lake queen" />
+				</a>
+			</div>
+
+			<label for="menu-toggle" class="cursor-pointer lg:hidden block">
+				<svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<title>menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</label>
+			<input class="hidden" type="checkbox" id="menu-toggle" />
+			<div
+				class="hidden duration-500 transition-all flex-1 lg:flex lg:items-center lg:justify-center w-full py-2 bg-[var(--text-blue)] !text-white"
+				id="menu"
+			>
+				<div class="bg-transparent border-0 outline-none flex items-center justify-center duration-500 transition-all">
+					<ul class="text-center flex flex-col lg:flex-row items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:pt-0">
+						<li class="py-2 lg:py-0 lg:pr-5">
+							<a
+								class="text-xl lg:text-2xl text-white font-semibold hover:pb-1 hover:border-b-4 hover:border-white leading-[1.5] transition-all"
+								href="index.html"
+							>
+								Home</a
+							>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2 relative mainmenu">
+							<a
+								class="text-xl lg:text-2xl text-white font-semibold hover:pb-1 hover:border-b-4 hover:border-white leading-[1.5] transition-all"
+								href="#"
+							>
+								About
+								<span class="text-2xl -ml-1">
+									<ion-icon name="chevron-down-outline" class="h-[15px]"></ion-icon>
+								</span>
+							</a>
+
+							<div class="hidden submenu text-white bg-white">
+								<ul class="m-2">
+									<li class="px-5 py-4">
+										<a href="/" class="text-[var(--text-blue)] hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]">
+											About Us</a
+										>
+									</li>
+									<li class="px-5 pb-2">
+										<a href="/" class="text-[var(--text-blue)] hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]"
+											>Availability</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-white font-semibold hover:pb-1 hover:border-b-4 hover:border-white leading-[1.5] transition-all"
+								href="#"
+							>
+								Inquiry</a
+							>
+						</li>
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-white font-semibold hover:pb-1 hover:border-b-4 hover:border-white leading-[1.5] transition-all"
+								href="#"
+							>
+								Event</a
+							>
+						</li>
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-white font-semibold hover:pb-1 hover:border-b-4 hover:border-white leading-[1.5] transition-all"
+								href="/gallary.html"
+							>
+								Gallery</a
+							>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-white font-semibold hover:pb-1 hover:border-b-4 hover:border-white leading-[1.5] transition-all"
+								href="#"
+							>
+								Feedback</a
+							>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2 relative mainmenu">
+							<a
+								class="text-xl lg:text-2xl text-white font-semibold hover:pb-1 hover:border-b-4 hover:border-white leading-[1.5] transition-all"
+								href="#"
+							>
+								Safety
+
+								<span class="text-2xl -ml-1">
+									<ion-icon name="chevron-down-outline" class="h-[15px]"></ion-icon>
+								</span>
+							</a>
+							<div class="hidden submenu text-white bg-white">
+								<ul class="m-2">
+									<li class="px-5 py-4">
+										<a href="/" class="text-[var(--text-blue)] hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]">
+											Evacuation Procedure</a
+										>
+									</li>
+									<li class="px-5 pb-2">
+										<a href="/" class="text-[var(--text-blue)] hover:text-orange-400 text-xl text-start lg:text-2xl font-semibold leading-[1.5]"
+											>Life Jacket</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2">
+							<a
+								class="text-xl lg:text-2xl text-white font-semibold hover:pb-1 hover:border-b-4 hover:border-white leading-[1.5] transition-all active:text-red-500"
+								href="contact.html"
+							>
+								Contact</a
+							>
+						</li>
+
+						<li class="py-2 lg:py-0 lg:px-2 relative topbox z-1">
+							<ion-icon
+								name="person-circle-outline"
+								class="text-xl lg:text-4xl pt-2 font-semibold leading-[1.5] transition-all text-white duration-500"
+							></ion-icon>
+							<div class="text-white popbox">
+								<ul class="m-2 flex flex-col items-start">
+									<li class="px-5 py-4">
+										<a
+											href="/"
+											class="text-white text-xl text-start lg:text-2xl font-semibold leading-[1.5] hover:pb-1 hover:border-b-4 hover:border-white transition duration-500"
+										>
+											Login</a
+										>
+									</li>
+									<li class="px-5 pb-2">
+										<a
+											href="/pnr.html"
+											class="text-white text-xl text-start lg:text-2xl font-semibold leading-[1.5] hover:pb-1 hover:border-b-4 hover:border-white transition duration-500"
+										>
+											Search PNR
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- upper div change -->
+		<!-- banner section -->
+		<div class="slider w-full max-w-[100vw] min-h-[250px] h-[50vw] m-auto min-w-[300px] relative overflow-hidden mt-[80px]">
+			<div class="list absolute top-0 left-0 h-[100%] w-max flex duration-1000">
+				<div class="item">
+					<img src="assets/img3.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="assets/img4.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="assets/img5.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="assets/img7.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="assets/img8.jpg" alt="" />
+				</div>
+			</div>
+			<!-- navigation  buttons -->
+			<div class="buttons absolute top-[45%] left-[5%] w-[90%] flex justify-between">
+				<button id="prev" class="w-[50px] h-[50px] rounded-[50%] bg-[#fff5] text-white hover:bg-[#fff9] hover:text-white border-0 font-bold">
+					<
+				</button>
+				<button id="next" class="w-[50px] h-[50px] rounded-[50%] bg-[#fff5] text-white hover:bg-[#fff9] hover:text-black border-0 font-bold">
+					>
+				</button>
+			</div>
+			<!-- dots -->
+		</div>
+
+		<div class="my-[2rem] flex flex-col items-center justify-center gap-y-5">
+			<h1 class="text-4xl md:text-5xl font-[800] tracking-wider leading-10 capitalize text-[var(--text-blue)] text-center">
+				Check Availability and Charges
+			</h1>
+			<h1 class="text-2xl md:text-3xl font-semibold tracking-wide leading-8 text-center my-6 w-[80%] mx-auto">
+				Select Date to Check Availability and Price
+			</h1>
+			<select
+				id="ride_date"
+				onchange="ride_book();"
+				class="w-full md:w-[75%] lg:w-[50%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+				style="font-size: 20px"
+			>
+				<option value="">--Select Booking Date--</option>
+				<!-- <option value="20-12-2023">20-12-2023</option> -->
+				<option value="21-12-2023">21-12-2023</option>
+				<option value="22-12-2023">22-12-2023</option>
+				<option value="23-12-2023">23-12-2023</option>
+				<option value="24-12-2023">24-12-2023</option>
+				<option value="25-12-2023">25-12-2023</option>
+				<option value="26-12-2023">26-12-2023</option>
+				<option value="27-12-2023">27-12-2023</option>
+				<option value="28-12-2023">28-12-2023</option>
+				<option value="29-12-2023">29-12-2023</option>
+				<option value="30-12-2023">30-12-2023</option>
+				<option value="31-12-2023">31-12-2023</option>
+				<option value="01-01-2024">01-01-2024</option>
+				<option value="02-01-2024">02-01-2024</option>
+				<option value="03-01-2024">03-01-2024</option>
+				<option value="04-01-2024">04-01-2024</option>
+			</select>
+		</div>
+		<!-- main div of ticket that will render all the tickets -->
+		<div class="min-h-screen min-w-[300px] flex flex-col justify-start items-center">
+			<h1 class="text-xl font-semibold leading-6 tracking-wide my-10">Seat Availability - Date : 21-12-2023</h1>
+			<div class="w-full flex flex-col items-center justify-center gap-y-5">
+				<!-- each ticket -->
+				<div class="w-full max-w-[800px] box border-black">
+					<!-- head -->
+					<div class="flex items-center justify-between px-4 h-[40px] bg-[#3C8DBC] w-full box border-black border-b-0">
+						<p>quote here</p>
+						<p>Time</p>
+					</div>
+					<!-- body -->
+					<div class="w-full box border-black pt-5">
+						<div class="flex items-center justify-between px-4 py-2">
+							<p class="text-lg font-bold leading-6 tracking-wide">Ticket</p>
+							<p class="text-lg font-bold leading-6 tracking-wide">Availability</p>
+							<p class="text-lg font-bold leading-6 tracking-wide">Price</p>
+						</div>
+						<!-- royal pass -->
+						<div class="flex items-center justify-between px-4 py-4 box border-gray-400 border-l-0 border-r-0">
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1">Royal</p>
+
+							<div class="bar flex-1 flex items-center justify-center box" data-size="100" style="width: 100%">
+								<span class="perc">100%</span>
+							</div>
+
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1 text-end">456</p>
+						</div>
+						<!-- premium pass -->
+
+						<div class="flex items-center justify-between p-4 box border-gray-400 border-l-0 border-r-0">
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1">Premium</p>
+
+							<div class="bar flex-1 flex items-center justify-center box" data-size="100" style="width: 100%">
+								<span class="perc">100%</span>
+							</div>
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1 text-end">456</p>
+						</div>
+						<!-- delux -->
+
+						<div class="flex items-center justify-between p-4 box border-gray-400 border-l-0 border-r-0">
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1">Deluxe</p>
+
+							<div class="bar flex-1 flex items-center justify-center box" data-size="100" style="width: 100%">
+								<span class="perc">100%</span>
+							</div>
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1 text-end">456</p>
+						</div>
+					</div>
+				</div>
+				<!-- another card -->
+				<div class="w-full max-w-[800px] box border-black">
+					<!-- head -->
+					<div class="flex items-center justify-between px-4 h-[40px] bg-[#3C8DBC] w-full box border-black border-b-0">
+						<p>quote here</p>
+						<p>Time</p>
+					</div>
+					<!-- body -->
+					<div class="w-full box border-black pt-5">
+						<div class="flex items-center justify-between px-4 py-2">
+							<p class="text-lg font-bold leading-6 tracking-wide">Ticket</p>
+							<p class="text-lg font-bold leading-6 tracking-wide">Availability</p>
+							<p class="text-lg font-bold leading-6 tracking-wide">Price</p>
+						</div>
+						<!-- royal pass -->
+						<div class="flex items-center justify-between px-4 py-4 box border-gray-400 border-l-0 border-r-0">
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1">Royal</p>
+
+							<div class="bar flex-1 flex items-center justify-center box" data-size="100" style="width: 100%">
+								<span class="perc">100%</span>
+							</div>
+
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1 text-end">456</p>
+						</div>
+						<!-- premium pass -->
+
+						<div class="flex items-center justify-between p-4 box border-gray-400 border-l-0 border-r-0">
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1">Premium</p>
+
+							<div class="bar flex-1 flex items-center justify-center box" data-size="100" style="width: 100%">
+								<span class="perc">100%</span>
+							</div>
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1 text-end">456</p>
+						</div>
+						<!-- delux -->
+
+						<div class="flex items-center justify-between p-4 box border-gray-400 border-l-0 border-r-0">
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1">Deluxe</p>
+
+							<div class="bar flex-1 flex items-center justify-center box" data-size="100" style="width: 100%">
+								<span class="perc">100%</span>
+							</div>
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1 text-end">456</p>
+						</div>
+					</div>
+				</div>
+				<!-- another -->
+				<div class="w-full max-w-[800px] box border-black">
+					<!-- head -->
+					<div class="flex items-center justify-between px-4 h-[40px] bg-[#3C8DBC] w-full box border-black border-b-0">
+						<p>quote here</p>
+						<p>Time</p>
+					</div>
+					<!-- body -->
+					<div class="w-full box border-black pt-5">
+						<div class="flex items-center justify-between px-4 py-2">
+							<p class="text-lg font-bold leading-6 tracking-wide">Ticket</p>
+							<p class="text-lg font-bold leading-6 tracking-wide">Availability</p>
+							<p class="text-lg font-bold leading-6 tracking-wide">Price</p>
+						</div>
+						<!-- royal pass -->
+						<div class="flex items-center justify-between px-4 py-4 box border-gray-400 border-l-0 border-r-0">
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1">Royal</p>
+
+							<div class="bar flex-1 flex items-center justify-center box" data-size="100" style="width: 100%">
+								<span class="perc">100%</span>
+							</div>
+
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1 text-end">456</p>
+						</div>
+						<!-- premium pass -->
+
+						<div class="flex items-center justify-between p-4 box border-gray-400 border-l-0 border-r-0">
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1">Premium</p>
+
+							<div class="bar flex-1 flex items-center justify-center box" data-size="100" style="width: 100%">
+								<span class="perc">100%</span>
+							</div>
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1 text-end">456</p>
+						</div>
+						<!-- delux -->
+
+						<div class="flex items-center justify-between p-4 box border-gray-400 border-l-0 border-r-0">
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1">Deluxe</p>
+
+							<div class="bar flex-1 flex items-center justify-center box" data-size="100" style="width: 100%">
+								<span class="perc">100%</span>
+							</div>
+							<p class="text-lg font-semibold leading-6 tracking-wide flex-1 text-end">456</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<section class="footer min-w-[300px] relative box border-[rgb(10,93,153)]">
+			<div class="bg-black h-full w-full absolute top-0 left-0 rounded-[6px] opacity-[0.25] z-[1]"></div>
+			<div class="footer-row sm:px-[10%] py-[60px] relative z-[10]">
+				<div class="footer-col mr-[1rem]">
+					<h4>Contact Us</h4>
+					<ul class="links">
+						<li><a href="#">Email Id: abc@gmail.com</a></li>
+						<li><a href="#">Mobile No : +91 123 234 4576</a></li>
+						<li><a href="#">Address : Lorem ipsum dolor sit amet.</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Usefull Links</h4>
+					<ul class="links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Payment Method</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Newsletter</h4>
+					<p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
+					<form action="#">
+						<input type="text" placeholder="Your email" required />
+						<button type="submit">SUBSCRIBE</button>
+					</form>
+					<div class="icons">
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-linkedin"></i>
+					</div>
+				</div>
+			</div>
+			<div class="my-[1rem] sm:my-[2rem] w-[90%] mx-auto flex flex-col md:flex-row md:justify-between items-center relative z-[10]">
+				<h1 class="text-sm sm:text-lg font-semibold text-white leading-8 tracking-wide capitalize">All right reserved © Lake Queen</h1>
+				<h1 class="text-sm sm:text-xl font-semibold text-white leading-8 tracking-wide capitalize">
+					Powered by <a href="https://theinfosoftnet.com/">Infosoft Network</a>
+				</h1>
+			</div>
+		</section>
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- First carousal script -->
+	<script>
+		// slider functions
+		let autoPlay = setInterval(() => {
+			next.click();
+		}, 5000);
+
+		let list = document.querySelector('.slider .list');
+		let items = document.querySelectorAll('.slider .list .item');
+		let dots = document.querySelectorAll('.slider .dots li');
+		let prev = document.getElementById('prev');
+		let next = document.getElementById('next');
+
+		let active = 0;
+		let itemLength = items.length - 1;
+
+		next.onclick = function () {
+			if (active + 1 > itemLength) {
+				active = 0;
+			} else {
+				active += 1;
+			}
+			reloadSlider();
+		};
+
+		function reloadSlider() {
+			let checkLeft = items[active].offsetLeft;
+			list.style.left = -checkLeft + 'px';
+			if (autoPlay) clearInterval(autoPlay);
+			autoPlay = setInterval(() => {
+				next.click();
+			}, 5000);
+		}
+
+		prev.onclick = function () {
+			if (active - 1 < 0) {
+				active = itemLength;
+			} else {
+				active -= 1;
+			}
+			reloadSlider();
+		};
+
+		// auto play
+	</script>
+</html>
+
+<!--  -->
