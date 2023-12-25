@@ -231,6 +231,7 @@
 					class="object-cover object-center w-full h-80 max-w-full rounded-lg box border-black shadow-xl"
 					src="/assets/media gallary/AmarujalaImage121095.png"
 					alt="gallery-photo"
+					onclick="showModal('/assets/media gallary/AmarujalaImage121095.png')"
 				/>
 			</div>
 			<div class="hover:opacity-[0.7] cursor-pointer duration-500">
@@ -238,6 +239,7 @@
 					class="object-cover object-center w-full h-80 max-w-full rounded-lg box border-black shadow-xl"
 					src="/assets/media gallary/AmarujalaImage12139.png"
 					alt="gallery-photo"
+					onclick="showModal('/assets/media gallary/AmarujalaImage12139.png')"
 				/>
 			</div>
 			<div class="hover:opacity-[0.7] cursor-pointer duration-500">
@@ -245,6 +247,7 @@
 					class="object-cover object-center w-full h-80 max-w-full rounded-lg box border-black shadow-xl"
 					src="/assets/media gallary/AmarujalaImage12150.png"
 					alt="gallery-photo"
+					onclick="showModal('/assets/media gallary/AmarujalaImage12150.png')"
 				/>
 			</div>
 			<div class="hover:opacity-[0.7] cursor-pointer duration-500">
@@ -252,6 +255,7 @@
 					class="object-cover object-center w-full h-80 max-w-full rounded-lg box border-black shadow-xl"
 					src="/assets/media gallary/AmarujalaImage121891.png"
 					alt="gallery-photo"
+					onclick="showModal('/assets/media gallary/AmarujalaImage121891.png')"
 				/>
 			</div>
 			<div class="hover:opacity-[0.7] cursor-pointer duration-500">
@@ -259,6 +263,7 @@
 					class="object-cover object-center w-full h-80 max-w-full rounded-lg box border-black shadow-xl"
 					src="/assets/media gallary/AmarujalaImage12643.png"
 					alt="gallery-photo"
+					onclick="showModal('/assets/media gallary/AmarujalaImage12643.png')"
 				/>
 			</div>
 			<div class="hover:opacity-[0.7] cursor-pointer duration-500">
@@ -266,16 +271,24 @@
 					class="object-cover object-center w-full h-80 max-w-full rounded-lg box border-black shadow-xl"
 					src="/assets/media gallary/AmarujalaImage12920.png"
 					alt="gallery-photo"
+					onclick="showModal('/assets/media gallary/AmarujalaImage12920.png')"
 				/>
 			</div>
-			<div class="hover:opacity-[0.7]">
+			<div class="hover:opacity-[0.9] duration-500">
 				<video width="500" height="300" controls>
 					<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-
-					Your browser does not support the video tag.
 				</video>
 			</div>
 		</div>
+		<!-- model -->
+		<div id="modal" class="hidden fixed top-0 left-0 z-[1000] w-screen h-screen bg-black/70 flex justify-center items-center" onclick="closeModal()">
+			<!-- The close button -->
+			<a class="fixed z-90 top-6 right-8 text-white text-5xl font-bold" href="javascript:void(0)" onclick="closeModal()">&times;</a>
+
+			<!-- A big image will be displayed here -->
+			<img id="modal-img" class="w-[min(100%,800px)] h-auto object-cover" onclick="innerClick(event)" />
+		</div>
+		<!-- video model -->
 
 		<!-- footer -->
 		<section class="footer min-w-[300px] relative border border-solid border-[rgb(10,93,153)]">
@@ -363,5 +376,24 @@
 		};
 
 		// auto play
+	</script>
+	<!-- model k script -->
+	<script>
+		// Get the modal by id
+		var modal = document.getElementById('modal');
+
+		// Get the modal image tag
+		var modalImg = document.getElementById('modal-img');
+
+		// this function is called when a small image is clicked
+		function showModal(src) {
+			modal.classList.remove('hidden');
+			modalImg.src = src;
+		}
+
+		// this function is called when the close button is clicked
+		function closeModal() {
+			modal.classList.add('hidden');
+		}
 	</script>
 </html>
